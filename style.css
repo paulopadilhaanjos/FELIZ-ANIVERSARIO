@@ -1,0 +1,65 @@
+body {
+  font-family: Arial;
+  background: linear-gradient(to top, #ff9a9e, #fad0c4);
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.tela {
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tela.ativa {
+  display: flex;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.fotos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.fotos img {
+  width: 120px;
+  margin: 8px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+button {
+  position: absolute;
+  bottom: 40px;
+  padding: 12px 25px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.1em;
+}
+
+#texto {
+  max-width: 600px;
+  font-size: 1.4em;
+}
+
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 20px;
+  animation: cair linear infinite;
+}
+
+@keyframes cair {
+  to {
+    transform: translateY(110vh);
+  }
+}
